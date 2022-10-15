@@ -954,5 +954,16 @@ module.exports = {
     'active',
     'disabled',
   ],
-  plugins: [],
+  plugins: [require('daisyui')],
+  // daisyUI config (optional)
+  daisyui: {
+    styled: true,
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false,
+    prefix: '',
+    darkTheme: 'dark',
+    themes: ['light', 'dark', 'cmyk'],
+  },
 };

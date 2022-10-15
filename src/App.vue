@@ -1,5 +1,6 @@
 <template>
   <section>
+    <NavBar />
     <nav>
       <router-link to="/">
         Home
@@ -21,12 +22,14 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import FooterComponent from './components/FooterComponent.vue';
+import NavBar from './components/NavBar.vue';
 
 export default defineComponent({
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'App',
   components: {
     FooterComponent,
+    NavBar
   },
 });
 </script>

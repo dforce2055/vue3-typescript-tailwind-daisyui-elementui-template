@@ -4,25 +4,33 @@
     <section class="m-4">
       <Skeleton />
     </section>
-    <section class="pt-2 mt-2">
-      <button
-        :class="`
-        flex-shrink-0
-        text-white
-        bg-${color}-500
-        border-0
-        py-2 px-8
-        focus:outline-none
-        hover:bg-${color}-600
-        rounded
-        text-lg
-        mt-10
-        sm:mt-0
-        transition ease-in-out delay-150 bg-${color}-500 hover:-translate-y-1 hover:scale-110 hover:bg-${color}-500 duration-150
-        `"
-      >
-        Button
-      </button>
+    <section class="md:container md:mx-auto">
+      <div class="flex justify-center">
+        <button class="btn loading mx-1">
+          loading
+        </button>
+        <button class="btn btn-secondary btn-outline">
+          Hello daisyui
+        </button>
+      </div>
+    </section>
+    <section>
+      <div class="alert shadow-lg">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="stroke-info flex-shrink-0 w-6 h-6"
+          ><path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          /></svg>
+          <span>12 unread messages. Tap to see.</span>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -36,7 +44,7 @@ export default defineComponent({
     Skeleton
   },
   data: () => ({
-    color: 'red'
+    color: 'red',
   }),
 });
 </script>
