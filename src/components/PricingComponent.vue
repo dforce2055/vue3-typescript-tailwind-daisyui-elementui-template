@@ -10,7 +10,7 @@
           Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.
         </p>
         <div class="flex mx-auto border-2 border-blue-500 rounded overflow-hidden mt-6">
-          <button class="py-1 px-4 bg-blue-500 text-white focus:outline-none">
+          <button class="py-1 px-4 primary text-white focus:outline-none">
             Monthly
           </button>
           <button class="py-1 px-4 focus:outline-none">
@@ -93,7 +93,7 @@
         </div>
         <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
           <div class="h-full p-6 rounded-lg border-2 border-blue-500 flex flex-col relative overflow-hidden">
-            <span class="bg-blue-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
+            <span class="primary text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
             <h2 class="text-sm tracking-widest title-font mb-1 font-medium">
               PRO
             </h2>
@@ -161,7 +161,7 @@
                 </svg>
               </span>Mixtape chillwave tumeric
             </p>
-            <button class="flex items-center mt-auto text-white bg-blue-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-blue-600 rounded">
+            <button class="flex items-center mt-auto text-white primary border-0 py-2 px-4 w-full focus:outline-none hover:bg-blue-600 rounded">
               Button
               <svg
                 fill="none"
