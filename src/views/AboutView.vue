@@ -5,12 +5,32 @@
       <Skeleton />
     </section>
     <section class="md:container md:mx-auto">
-      <div class="flex justify-center">
+      <div
+        class="flex justify-center"
+      >
         <button class="btn loading mx-1">
           loading
         </button>
         <button class="btn btn-secondary btn-outline">
           Hello daisyui
+        </button>
+        <button class="btn">
+          Button
+        </button>
+        <button class="btn btn-primary">
+          Button
+        </button>
+        <button class="btn btn-secondary">
+          Button
+        </button>
+        <button class="btn btn-accent">
+          Button
+        </button>
+        <button class="btn btn-ghost">
+          Button
+        </button>
+        <button class="btn btn-link">
+          Button
         </button>
       </div>
     </section>
@@ -37,6 +57,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import Skeleton from '@/components/Skeleton.vue';
+import { themeChange } from 'theme-change'
 
 export default defineComponent({
   name: 'AboutView',
@@ -46,5 +67,8 @@ export default defineComponent({
   data: () => ({
     color: 'red',
   }),
+  async mounted() {
+    themeChange(false)
+  }
 });
 </script>

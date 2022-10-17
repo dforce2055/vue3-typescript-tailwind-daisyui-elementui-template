@@ -26,6 +26,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import { themeChange } from 'theme-change'
 
 export default defineComponent({
   name: 'DarkModeSelector',
@@ -37,15 +38,30 @@ export default defineComponent({
     }
   },
   data: () => ({
-    darkMode: false
+    darkMode: false,
+    key: ''
   }),
   watch: {
     darkMode(val) {
-      if (val)
+      if (val) {
         document?.querySelector('html')?.setAttribute('data-theme', 'dark')
-      else
+        localStorage.setItem('theme', 'dark')
+      }
+      else {
         document?.querySelector('html')?.setAttribute('data-theme', 'light')
+        localStorage.setItem('theme', 'dark')
+      }
     }
+  },
+  async mounted() {
+    themeChange(false)
+    await this.getTheme()
+  },
+  methods: {
+    getTheme() {
+      this.key = localStorage.getItem('theme') || 'dark'
+      return this.key
+    },
   },
 })
 </script>
