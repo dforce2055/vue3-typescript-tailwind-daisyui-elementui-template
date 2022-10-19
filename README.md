@@ -3,6 +3,7 @@
 ### Simple Vue + Typescript + Taildwind + Firebase + Template
 **DEMO:** <a href="https://vue3-typescript-template.web.app/" target="_blank">https://vue3-typescript-template.web.app</a>
 
+![Magic Memory Game]( vue3-template.png "Magic Memory Game")
 ## Project setup
 ```
 npm install
