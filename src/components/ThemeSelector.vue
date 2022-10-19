@@ -22,7 +22,7 @@ export default defineComponent({
   name: 'ThemeSelector',
   data: () => ({
     color: 'red',
-    themes: ['light', 'dark', 'cmyk'],
+    themes: ['light', 'dark'],
     key: '',
   }),
   async mounted() {

@@ -1,4 +1,7 @@
-# vue3-tailwind-daisy
+# vue3-typescript-tailwind
+# Vue 3 + Typescript + Taildwind Template
+### Simple Vue + Typescript + Taildwind + Firebase + Template
+**DEMO:** <a href="https://vue3-typescript-template.web.app/" target="_blank">https://vue3-typescript-template.web.app</a>
 
 ## Project setup
 ```

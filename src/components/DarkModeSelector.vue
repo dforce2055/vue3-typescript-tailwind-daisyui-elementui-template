@@ -49,7 +49,7 @@ export default defineComponent({
       }
       else {
         document?.querySelector('html')?.setAttribute('data-theme', 'light')
-        localStorage.setItem('theme', 'dark')
+        localStorage.setItem('theme', 'light')
       }
     }
   },

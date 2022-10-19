@@ -1,6 +1,27 @@
 <template>
-  <div class="about">
+  <div class="about ">
     <h1>This is an about page</h1>
+    <el-button
+      plain
+      @click="open"
+    >
+      Closes automatically
+    </el-button>
+    <section class="flex justify-center">
+      <article class="prose lg:prose-xl">
+        <h1>Garlic bread with cheese: What the science tells us</h1>
+        <p>
+          For years parents have espoused the health benefits of eating garlic bread with cheese to their
+          children, with the food earning such an iconic status in our culture that kids will often dress
+          up as warm, cheesy loaf for Halloween.
+        </p>
+        <p>
+          But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
+          springing up around the country.
+        </p>
+        <!-- ... -->
+      </article>
+    </section>
     <section class="m-4">
       <Skeleton />
     </section>
@@ -58,6 +79,7 @@
 import { defineComponent } from 'vue';
 import Skeleton from '@/components/Skeleton.vue';
 import { themeChange } from 'theme-change'
+import { ElNotification } from 'element-plus'
 
 export default defineComponent({
   name: 'AboutView',
@@ -69,6 +91,15 @@ export default defineComponent({
   }),
   async mounted() {
     themeChange(false)
+  },
+  methods: {
+    open() {
+      ElNotification({
+        title: 'Prompt',
+        message: 'This is a message that does not automatically close',
+        duration: 5000,
+      })
+    }
   }
 });
 </script>

@@ -954,7 +954,7 @@ module.exports = {
     'active',
     'disabled',
   ],
-  plugins: [require('daisyui')],
+  plugins: [require('@tailwindcss/typography'), require('daisyui')],
   // daisyUI config (optional)
   daisyui: {
     styled: true,
@@ -964,6 +964,41 @@ module.exports = {
     rtl: false,
     prefix: '',
     darkTheme: 'dark',
-    themes: ['light', 'dark', 'cmyk'],
+    themes: [
+      {
+        light: {
+          'primary': '#3ABFF8',
+          'secondary': '#1d4a65',
+          'accent': '#37CDBE',
+          'neutral': '#3D4451',
+          'base-100': '#FFFFFF',
+          'info': '#a5f3fc',
+          'success': '#36D399',
+          'warning': '#FBBD23',
+          'error': '#F87272',
+        },
+      },
+      {
+        dark: {
+          primary: '#3ABFF8',
+          'primary-content': '#ffffff',
+          secondary: '#1d4a65',
+          'secondary-content': '#ffffff',
+          accent: '#37CDBE',
+          'accent-content': '#ffffff',
+          neutral: '#3D4451',
+          'neutral-focus': '#111318',
+          'neutral-content': '#A6ADBB',
+          'base-100': '#2A303C',
+          'base-200': '#242933',
+          'base-300': '#20252E',
+          'base-content': '#A6ADBB',
+          'info': '#a5f3fc',
+          'success': '#36D399',
+          'warning': '#FBBD23',
+          'error': '#F87272',
+        },
+      },
+    ],
   },
 };
